@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація на спортивний захід</title>
+</head>
+<body>
+
+<h1>Реєстрація на спортивний захід</h1>
+
+<form>
+
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="surname">Прізвище:</label>
+    <input type="text" id="surname" name="surname" required>
+    <br><br>
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="phone">Номер телефону:</label>
+    <input type="tel" id="phone" name="phone">
+    <br><br>
+
+    <label for="age">Вік:</label>
+    <input type="number" id="age" name="age"
+           min="12" max="80" required>
+    <br><br>
+
+    <label for="date">Дата участі:</label>
+    <input type="date" id="date" name="date" required>
+    <br><br>
+
+    <p>Дистанція:</p>
+
+    <input type="radio" id="km2" name="distance" value="2" required>
+    <label for="km2">2 км</label>
+
+    <input type="radio" id="km5" name="distance" value="5">
+    <label for="km5">5 км</label>
+
+    <input type="radio" id="km10" name="distance" value="10">
+    <label for="km10">10 км</label>
+
+    <br><br>
+
+    <p>Додаткові можливості:</p>
+
+    <input type="checkbox" id="shirt" name="options">
+    <label for="shirt">Отримати футболку</label>
+
+    <input type="checkbox" id="medal" name="options">
+    <label for="medal">Отримати медаль</label>
+
+    <input type="checkbox" id="news" name="options">
+    <label for="news">Отримувати новини про наступні заходи</label>
+
+    <input type="checkbox" id="rating" name="options">
+    <label for="rating">Додати результати до загального рейтингу</label>
+
+    <br><br>
+
+    <label for="category">Категорія учасника:</label>
+    <select id="category" name="category">
+        <option>Учень</option>
+        <option>Студент</option>
+        <option>Дорослий</option>
+        <option>Інша категорія</option>
+    </select>
+
+    <br><br>
+
+    <label for="info">Додаткова інформація для організаторів:</label>
+    <br>
+    <textarea id="info" name="info"
+              maxlength="250" rows="6" cols="50"></textarea>
+
+    <br><br>
+
+    <button type="submit">Зареєструватися</button>
+    <button type="reset">Очистити</button>
+
+</form>
+
+</body>
+</html>
