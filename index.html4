@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            border-radius: 8px;
+        }
+
+        .important {
+            color: red;
+            font-weight: bold;
+        }
+
+        .date {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="main-title">Daily News</h1>
+        <p>Щоденні новини про важливі події</p>
+    </header>
+
+    <nav>
+        <a href="#">Головна</a>
+        <a href="#">Технології</a>
+        <a href="#">Спорт</a>
+    </nav>
+
+    <main>
+        <h2>Останні новини</h2>
+
+        <article class="card">
+            <h3>Новий смартфон отримав потужний процесор</h3>
+            <p>
+                Виробники представили новий смартфон із сучасним процесором,
+                покращеною камерою та великим акумулятором.
+            </p>
+            <p class="date">Дата публікації: 23 вересня 2026 року</p>
+            <a href="#">Читати більше</a>
+        </article>
+
+        <article class="card">
+            <h3>Важлива спортивна подія</h3>
+            <p class="important">
+                ВАЖЛИВО: У місті відбудеться великий спортивний турнір,
+                у якому візьмуть участь команди з різних регіонів України.
+            </p>
+            <p class="date">Дата публікації: 23 вересня 2026 року</p>
+            <a href="#">Читати більше</a>
+        </article>
+
+        <article class="card">
+            <h3>Українські студенти створили новий проєкт</h3>
+            <p>
+                Студенти розробили цікавий навчальний проєкт,
+                який допомагає краще вивчати сучасні інформаційні технології.
+            </p>
+            <p class="date">Дата публікації: 22 вересня 2026 року</p>
+            <a href="#">Читати більше</a>
+        </article>
+
+    </main>
+
+</body>
+</html>
