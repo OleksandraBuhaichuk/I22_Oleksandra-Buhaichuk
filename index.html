@@ -1,90 +1,111 @@
+
+
+   
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Реєстрація на спортивний захід</title>
+    <title>Про мене — Елегантний стиль</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fce4ec;
+            color: #4a2333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #581845;
+            font-size: 36px;
+            margin-bottom: 30px;
+            border-bottom: 2px dashed #c71585;
+            padding-bottom: 15px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 2px solid #f8bbd0;
+            box-shadow: 0 4px 10px rgba(199, 21, 133, 0.1);
+        }
+        h2 {
+            color: #880e4f;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .special-text {
+            color: #ad1457;
+            font-family: 'Brush Script MT', cursive, sans-serif;
+            font-size: 22px;
+            text-align: center;
+            background: #f8bbd0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #4a2333;
+        }
+        .media-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Реєстрація на спортивний захід</h1>
+    <h1>About Me & My Creative Background</h1>
 
-<form>
+    <div class="card">
+        <h2>Про мене</h2>
+        <p>Привіт! Мене звати Олександра. Я навчаюся в коледжі за спеціальністю інформаційні системи та технології.</p>
+        <p>У вільний час я люблю грати в комп'ютерні ігри, розробляти дизайн та вивчати нові цифрові інструменти.</p>
+    </div>
 
-    <label for="name">Ім'я:</label>
-    <input type="text" id="name" name="name" required>
-    <br><br>
+    <div class="card">
+        <h2>Мої захоплення</h2>
+        <div class="special-text">
+            <u><b>Цей текст оформлений у стилі дизайну: рожевий фон, елегантний шрифт, жирне та підкреслене накреслення.</b></u>
+        </div>
+    </div>
 
-    <label for="surname">Прізвище:</label>
-    <input type="text" id="surname" name="surname" required>
-    <br><br>
+    <div class="card">
+        <h2>Мої улюблені предмети</h2>
+        <p>Ось список дисциплін, які мені подобаються найбільше:</p>
+        <ul style="list-style-type: circle;">
+            <li>Інформатика</li>
+            <li>Веб-дизайн</li>
+            <li>Програмування</li>
+        </ul>
+    </div>
 
-    <label for="email">Електронна пошта:</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
+    <div class="card">
+        <h2>Цікаве відео</h2>
+        <div class="media-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7_LPdttKXPc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-    <label for="phone">Номер телефону:</label>
-    <input type="tel" id="phone" name="phone">
-    <br><br>
-
-    <label for="age">Вік:</label>
-    <input type="number" id="age" name="age"
-           min="12" max="80" required>
-    <br><br>
-
-    <label for="date">Дата участі:</label>
-    <input type="date" id="date" name="date" required>
-    <br><br>
-
-    <p>Дистанція:</p>
-
-    <input type="radio" id="km2" name="distance" value="2" required>
-    <label for="km2">2 км</label>
-
-    <input type="radio" id="km5" name="distance" value="5">
-    <label for="km5">5 км</label>
-
-    <input type="radio" id="km10" name="distance" value="10">
-    <label for="km10">10 км</label>
-
-    <br><br>
-
-    <p>Додаткові можливості:</p>
-
-    <input type="checkbox" id="shirt" name="options">
-    <label for="shirt">Отримати футболку</label>
-
-    <input type="checkbox" id="medal" name="options">
-    <label for="medal">Отримати медаль</label>
-
-    <input type="checkbox" id="news" name="options">
-    <label for="news">Отримувати новини про наступні заходи</label>
-
-    <input type="checkbox" id="rating" name="options">
-    <label for="rating">Додати результати до загального рейтингу</label>
-
-    <br><br>
-
-    <label for="category">Категорія учасника:</label>
-    <select id="category" name="category">
-        <option>Учень</option>
-        <option>Студент</option>
-        <option>Дорослий</option>
-        <option>Інша категорія</option>
-    </select>
-
-    <br><br>
-
-    <label for="info">Додаткова інформація для організаторів:</label>
-    <br>
-    <textarea id="info" name="info"
-              maxlength="250" rows="6" cols="50"></textarea>
-
-    <br><br>
-
-    <button type="submit">Зареєструватися</button>
-    <button type="reset">Очистити</button>
-
-</form>
+    <div class="card">
+        <h2>Контактні дані</h2>
+        <p align="center"><b>Електронна пошта:</b> student@gmail.com</p>
+    </div>
 
 </body>
 </html>
